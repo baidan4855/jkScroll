@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="jquery-1.8.2.js"></script>
+    <script type="text/javascript" src="jquery.cookie.js"></script>
+    <script type="text/javascript" src="jquery.md5.js"></script>
+    <script type="text/javascript" src="jquery.jkScroll.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            for(var i=0;i<1000;i++){
+                $("body").before(i+"<br/>");
+            }
+            $.jkScroll();
+        });
+        function jump(){
+            window.location="page1.html";
+        }
+    </script>
+</head>
+<body>
+<button onclick="jump()" style="position:fixed;top:10px;left:100px">jump to page 1</button>
+</body>
+</html>
